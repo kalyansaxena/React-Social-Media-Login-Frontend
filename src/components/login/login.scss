@@ -1,0 +1,113 @@
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .loginTitle {
+    padding: 20px;
+    color: gray;
+    font-weight: 300;
+  }
+
+  .wrapper {
+    width: 60%;
+    height: 60%;
+    -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .left,
+    .right {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex: 1;
+
+      .loginButton {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+        box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+        border-radius: 5px;
+      }
+    }
+
+    .right {
+      input {
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid gray;
+      }
+
+      .submit {
+        width: 200px;
+        padding: 10px;
+        background-color: rgb(11, 131, 131);
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .login {
+    .wrapper {
+      width: 60%;
+      height: 40%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .login {
+    .loginTitle {
+      width: 70%;
+    }
+
+    .wrapper {
+      width: 70%;
+      height: 60%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .login {
+    .loginTitle {
+      width: 80%;
+      font-size: 16px;
+    }
+
+    .wrapper {
+      width: 85%;
+      height: 60%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      flex-direction: column;
+    }
+  }
+}
